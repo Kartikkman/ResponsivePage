@@ -1,0 +1,21 @@
+{
+  "name": "talwindcss_init",
+  "version": "1.0.0",
+  "description": "Initializer project for Tailwind CSS",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "npx postcss src/tailwind.css -o dist/tailwind.css",
+    "start": "live-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kartik Sikka",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.0.2",
+    "postcss": "^8.1.9",
+    "tailwindcss": "^2.0.1"
+  },
+  "devDependencies": {
+    "postcss-cli": "^8.3.0"
+  }
+}
