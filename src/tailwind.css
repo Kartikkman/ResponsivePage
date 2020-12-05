@@ -2,6 +2,162 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  
+  @variants responsive {
+  
+    /* Font Sizes */ 
+
+    .text-body-sm
+    {
+
+        font-size: 16px;
+        font-weight: 100;
+        font-family: 'Open Sans', sans-serif;
+
+    }
+
+    .text-body-m
+    {
+        font-size: 20px;
+        font-weight: 100;
+        font-family: 'Open Sans', sans-serif;
+
+    }
+
+    .text-body
+    {
+        font-size: 14px;
+        font-weight: 100;
+        font-family: 'Open Sans', sans-serif;
+
+    }
+
+
+    .sub-heading-xxs   
+    {
+        font-size: 11px;
+        line-height: 14px;
+        font-weight: normal;
+        font-family: 'Open Sans', sans-serif;
+
+    }
+
+    .sub-heading-xs
+    {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: normal;
+        font-family: 'Open Sans', sans-serif;
+
+    }  
+
+    .sub-heading-s
+    {
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: normal;
+        font-family: 'Open Sans', sans-serif;
+
+    }
+
+    .f-btn-s
+    {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .f-btn
+    {
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+    .heading-xxs
+    {
+        font-size: 18px;
+        line-height: 24px; 
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+
+    .heading-xs
+    {
+        font-size: 22px;
+        line-height: 28px; 
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+
+    .heading-s
+    {
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+
+    .heading-m
+    {
+        font-size: 36px;
+        line-height: 46px;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+
+    .heading-l
+    {
+        font-size: 44px;
+        line-height: 56px;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+    .heading-xl
+    {
+        font-size: 60px;
+        line-height: 56px; 
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+    .heading-accent-xs
+    {
+        font-family: 'FloodStd';
+        font-size: 32px;
+    }
+
+    .heading-accent-s
+    {
+        font-family: 'FloodStd';
+        font-size: 44px;
+        line-height:46px;
+    }
+
+    .heading-accent-l
+    {
+        font-family: 'FloodStd';
+        font-size: 72px;
+    }
+  }
+
+}
+
 .btn {
   @apply px-4 py-2 bg-blue-600 text-white rounded;
 }

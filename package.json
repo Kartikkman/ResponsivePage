@@ -1,7 +1,7 @@
 {
-  "name": "talwindcss_init",
+  "name": "climate_change",
   "version": "1.0.0",
-  "description": "Initializer project for Tailwind CSS",
+  "description": "Responsive Web Page for Climate Change ",
   "main": "index.js",
   "scripts": {
     "build-css": "npx postcss src/tailwind.css -o dist/tailwind.css",

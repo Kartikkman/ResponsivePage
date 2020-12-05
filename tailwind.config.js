@@ -2,7 +2,12 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#354463',
+        secondary: '#C1F7D5',
+      }
+    },
   },
   variants: {
     extend: {},

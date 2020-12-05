@@ -1,78 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../dist/tailwind.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./homePage.css">
 </head>
+
 <body>
-   <!--
-  Welcome to Tailwind Play, the official Tailwind CSS playground!
 
-  Everything here works just like it does when you're running Tailwind locally
-  with a real build pipeline. You can customize your config file, use features
-  like `@apply`, or even add third-party plugins.
+  <div class="w-100">
 
-  Feel free to play with this example if you're just learning, or trash it and
-  start from scratch if you know enough to be dangerous. Have fun!
--->
-<div class="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
-    <div class="relative py-3 sm:max-w-xl sm:mx-auto">
-      <div class="absolute inset-0 bg-gradient-to-r from-cyan-400 to-light-blue-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
-      <div class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
-        <div class="max-w-md mx-auto">
-          <div>
-            <img src="./assets/logo.svg" class="h-7 sm:h-8" />
-          </div>
-          <div class="divide-y divide-gray-200">
-            <div class="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
-              <p>An advanced online playground for Tailwind CSS, including support for things like:</p>
-              <ul class="list-disc space-y-2">
-                <li class="flex items-start">
-                  <span class="h-6 flex items-center sm:h-7">
-                    <svg class="flex-shrink-0 h-5 w-5 text-cyan-500" viewBox="0 0 20 20" fill="currentColor">
-                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                    </svg>
-                  </span>
-                  <p class="ml-2">
-                    Customizing your
-                    <code class="text-sm font-bold text-gray-900">tailwind.config.js</code> file
-                  </p>
-                </li>
-                <li class="flex items-start">
-                  <span class="h-6 flex items-center sm:h-7">
-                    <svg class="flex-shrink-0 h-5 w-5 text-cyan-500" viewBox="0 0 20 20" fill="currentColor">
-                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                    </svg>
-                  </span>
-                  <p class="ml-2">
-                    Extracting classes with
-                    <code class="text-sm font-bold text-gray-900">@apply</code>
-                  </p>
-                </li>
-                <li class="flex items-start">
-                  <span class="h-6 flex items-center sm:h-7">
-                    <svg class="flex-shrink-0 h-5 w-5 text-cyan-500" viewBox="0 0 20 20" fill="currentColor">
-                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                    </svg>
-                  </span>
-                  <p class="ml-2">Code completion with instant preview</p>
-                </li>
-              </ul>
-              <p>Perfect for learning how the framework works, prototyping a new idea, or creating a demo to share online.</p>
-            </div>
-            <div class="pt-6 text-base leading-6 font-bold sm:text-lg sm:leading-7">
-              <p>Want to dig deeper into Tailwind?</p>
-              <p>
-                <a href="https://tailwindcss.com" class="text-cyan-600 hover:text-cyan-700"> Read the docs &rarr; </a>
-              </p>
-            </div>
-          </div>
+    <header class="bg-white grid max-w-screen-xl mx-auto lg:gap-x-24">
+
+      <div class="grid TextContainer">
+        <p class="heading-xxs md:heading-xs text-primary">The Green<br>Trees Initiative</p>
+        <ul class="list-none space-y-2 sm:space-y-0 sm:space-x-5 lg:space-x-24">
+          <li class="sub-heading-xs sm:text-body-sm">About us</li>
+          <li class="sub-heading-xs sm:text-body-sm">Get involved</li>
+          <li class="sub-heading-xs sm:text-body-sm">News and events</li>
+        </ul>
+      </div>
+
+      <button class="w-full rounded-3xl f-btn text-primary bg-secondary p-2 sm:px-4 sm:py-3">Donate Today</button>
+
+    </header>
+
+    <section class="Banner Banner1 grid p-8">
+      <div class="Content grid">
+        <h1 class="heading-accent-s text-white">#Stop<br>Climate<br>Change</h1>
+        <div class="BannerDesc bg-white relative p-8">
+          <h3 class="BannDescHead text-body text-white bg-primary">STORIES</h3>
+          <p class="BannerDescPara heading-xs">
+            Climate change poses the
+            biggest threat to women
+            in developing nations.
+          </p>
+
+          <a href="">Read more about this environmental and social cause</a>
+
         </div>
       </div>
-    </div>
+
+      <div class="BackgrImg">
+        <img  alt="">
+      </div>
+
+
+    </section>
+
+
+
   </div>
-  
+
 </body>
+
 </html>

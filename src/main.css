@@ -1,0 +1,15 @@
+@import '../dist/tailwind.css';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@500;700&display=swap');
+
+/* Fonts 
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+
+@font-face{
+
+font-family: 'FloodStd';
+src:url('./assets/FloodStd.otf');
+
+}
