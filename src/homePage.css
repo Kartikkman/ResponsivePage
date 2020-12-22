@@ -19,15 +19,21 @@ header
 
 .Banner
 {
-    position: relative;
+    position: relative; 
+    
 }
 
 .Banner .Content
 {
     gap:120px;
-    z-index: 10;
-
+    max-width: 1280px;
 }
+
+.Banner .Content *
+{
+    z-index: 10;
+}
+
 
 .Banner .BackgrImg
 {
@@ -35,16 +41,17 @@ header
     top:0;
     left:0;
     overflow: hidden;
-    height: 100%;
 }
 
-.BackgrImg img
+.Banner .BackgrImg img
 {
     content: url("./assets/Banner1BackMob.png");
-    width: 100%;
+    background: #354463;
+
 }
 
-.BannDescHead
+
+.Banner .BannDescHead
 {
     position: absolute;
     top: -20px;
@@ -53,7 +60,66 @@ header
     transform: translateX(-50%);
 }
 
+.Banner a
+{
+    display: block;
+    overflow: hidden;
+    text-decoration: underline;
+}
 
+.ActionItemList
+{
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+ 
+}
+
+.ActionItemDiv .ActionBtn
+{
+    top: -20px;
+    min-width: 160px;
+    padding: 10px 0;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Work
+{
+    justify-items: center;
+    display: grid;
+    align-items: flex-start;
+}
+
+.ClimateChange .BackImg
+{
+    left:0;
+    top:0;
+}
+
+.FactList
+{
+  row-gap: 1rem;
+
+}
+
+.Fact
+{
+    grid-template-columns: 6fr 1fr;
+    column-gap: 20px;
+}
+
+.IconWrapp
+{
+    width: 32px;
+    height: 32px;
+}
+
+.IconWrapp img
+{
+    margin-top: 8px;
+    left: 8px;
+}
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -84,9 +150,57 @@ header
 
     }
 
+    .Banner .BackgrImg img
+    {
+        content: url("./assets/Banner1BackTablet.png");
+
+    }
+
+    .Banner .BannDescHead
+    {
+
+        padding:10px 40px;
+        left: 64px;
+        transform: translateX(0%);
+    }
 
 
+    .BannerDesc
+    {
+        text-align: left;
+        padding: 64px;
+    }
 
+    .ActionItemList
+    {
+        column-gap:128px;
+    }
+
+    .Work
+    {
+        grid-template-areas:
+        "Image TextCont"
+        "Buttn TextCont";
+        grid-template-columns: 5fr 4fr;
+        grid-column-gap: 2rem;
+        text-align: left;
+    }
+
+    .Work .ImgCont
+    {
+        grid-area: Image;
+    }
+
+    .Work .TextContent
+    {
+        grid-area: TextCont;
+    }
+
+    .Work button
+    {
+        grid-area: Buttn;
+        justify-self: end;
+    }
 
 }
 
@@ -116,7 +230,73 @@ header
         justify-self: end;
     }
 
+    .Banner .Content
+    {
+        grid-template-areas: "Desc Headline";
+        grid-template-columns: auto auto;
+        justify-content: flex-start;
+    }
+
+    .Banner .Content h1
+    {
+        grid-area: Headline;
+    }
+
+    .Banner .BackgrImg img
+    {
+        content: url("./assets/Banner1BackDesk.png");
+
+    }
     
+    .Banner .BannerDesc
+    {
+        max-width: 550px;
+        padding:74px 64px;
+    }
+
+    .ActionItemList
+    {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap:58px;
+    }
+
+    .WorkList
+    {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 4rem;
+    }
+
+    .Work
+    {
+        justify-items: flex-start;
+        display: grid;
+        align-items: flex-start;
+        grid-template-areas: none;
+        grid-template-columns: none;
+    }
+
+    .Work .ImgCont
+    {
+        grid-area: unset;
+    }
+
+    .Work .ImgCont img
+    {
+        width:calc(100% + 64px);
+        max-width: unset;
+    }
+
+    .Work .TextContent
+    {
+        grid-area: unset;
+    }
+
+    .Work button
+    {
+        grid-area: unset;
+        justify-self: start;
+    }
+
 
 
 }
