@@ -6,6 +6,12 @@ header
     gap:28px;
 }
 
+.absCenter
+{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .TextContainer
 {
     grid-template-columns: 1fr 1fr;
@@ -93,9 +99,16 @@ header
 
 .ClimateChange .BackImg
 {
+    
     left:0;
     top:0;
 }
+
+.ClimateChange .BackImg img
+{
+    content: url(./assets/HungerBackMob.png);
+}
+
 
 .FactList
 {
@@ -117,8 +130,9 @@ header
 
 .IconWrapp img
 {
-    margin-top: 8px;
-    left: 8px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 50%;
 }
 
 
@@ -200,6 +214,21 @@ header
     {
         grid-area: Buttn;
         justify-self: end;
+    }
+
+    .ClimateChange .BackImg img
+    {
+        content: url(./assets/HungerBackTablet.png);
+    }
+
+    .ClimateChange .Content
+    {
+        grid-template-columns: 1fr 2fr;
+        column-gap: 4rem;
+    }
+
+    .Fact{
+        column-gap: 4rem;
     }
 
 }
@@ -296,6 +325,18 @@ header
         grid-area: unset;
         justify-self: start;
     }
+
+    .ClimateChange .Content
+    {
+        grid-template-columns: 1fr 1.1fr;
+        column-gap: 8rem;
+    }
+
+    .ClimateChange .BackImg img
+    {
+        content: url(./assets/HungerBackDesk.png);
+    }
+
 
 
 
