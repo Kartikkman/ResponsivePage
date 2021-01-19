@@ -12,6 +12,7 @@ header
     transform: translateX(-50%);
 }
 
+
 .TextContainer
 {
     grid-template-columns: 1fr 1fr;
@@ -135,6 +136,15 @@ header
     top: 50%;
 }
 
+.StoryImg img
+{
+    content: url("./assets/story1Mob.png");
+}
+
+.NewsList
+{
+    gap:85px;
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 640px) {
@@ -230,6 +240,42 @@ header
     .Fact{
         column-gap: 4rem;
     }
+
+    .StoryImg img
+    {
+        content: url("./assets/story1Tablet.png");
+    }
+
+
+    .StoryImg span
+    {
+        left:4rem;
+        transform: none;
+
+    }
+
+    .NewsList .News:nth-child(1)
+    {
+        grid-template-areas: "Img TextCont";
+    }
+
+    .NewsList .News:nth-child(2)
+    {
+        grid-template-areas: "TextCont Img ";
+    }
+
+
+    .News > .ImgCont
+    {
+        grid-area: Img;
+        max-height: 60%;
+    }
+
+    .News > .TextContent
+    {
+        grid-area: TextCont;
+    }
+
 
 }
 
@@ -337,9 +383,39 @@ header
         content: url(./assets/HungerBackDesk.png);
     }
 
+    .Story
+    {
+        grid-template-columns: 1fr 1.25fr;
+        grid-template-areas: "Text Img";
+    }
 
+    .StoryImg img
+    {
+        grid-area: Img;
+        content: url("./assets/story1Desk.png");
 
+    }
 
+    .StoryTxtWrapp{
+        grid-area: Text;
+        position: relative;
+    }
+
+    .StoryTxt
+    {
+        top:50%;
+        transform: translateY(-50%);
+        right:4rem;
+    }
+
+    .StoryTxtWrapp > button {
+        position: absolute;
+        bottom:0;
+        left:4rem;
+
+    }
+
+    
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
