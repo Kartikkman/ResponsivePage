@@ -24,3 +24,31 @@ src:url('./assets/FloodStd.otf');
 {
     min-width: 160px;
 }
+
+input::placeholder
+{
+    padding-left: 1rem;
+}
+
+.lightNotImp
+{
+
+    font-weight: lighter !important;
+
+}
+
+input:focus
+{
+   outline: none !important;
+}
+
+
+
+@media only screen and (min-width: 1024px) {
+
+    input::placeholder
+    {
+        padding-left: 1.5rem;
+    }
+
+}

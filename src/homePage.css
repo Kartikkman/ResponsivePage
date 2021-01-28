@@ -146,6 +146,51 @@ header
     gap:85px;
 }
 
+.NewsLetter .Content > .grid
+{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "textLine textLine textLine" 
+    "Email Email Btn";
+    column-gap: 8px;
+    row-gap:1.75rem;
+
+}
+
+.NewsLetter h1
+{
+    grid-area: textLine;
+}
+
+.NewsLetter input
+{
+    grid-area: Email;
+}
+
+.NewsLetter button
+{
+    grid-area: Btn;
+}
+
+footer
+{
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4.5rem;
+    column-gap:4.5rem;
+
+}
+
+footer .TagLine
+{
+    grid-column: 2/ span 1;
+    text-align: right;
+}
+
+
+
+
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 640px) {
 
@@ -274,6 +319,26 @@ header
     .News > .TextContent
     {
         grid-area: TextCont;
+    }
+
+    footer
+    {
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    footer ul:last-of-type
+    {
+
+        grid-column: 2 / span 1;
+
+    }
+
+
+    footer .TagLine
+    {
+        grid-column: 3 / span 1;
+        text-align: left;
     }
 
 
@@ -414,6 +479,42 @@ header
         left:4rem;
 
     }
+
+    .NewsList
+    {
+        row-gap:120px;
+    }
+
+    .News .ImgCont
+    {
+        max-height: 100%;
+    }
+
+    .NewsLetter .Content > .grid
+    {
+        grid-template-areas: 
+        "textLine Email Btn";
+        align-items: center;
+        grid-template-columns: 3fr 2fr 1fr;
+    }
+
+    footer
+    {
+        grid-template-columns: auto auto auto auto auto ;
+    }
+
+    footer ul:last-of-type
+    {
+        grid-column: auto;
+    }
+
+
+    footer .TagLine
+    {
+        grid-column: auto;
+        text-align: left;
+    }
+
 
     
 }
