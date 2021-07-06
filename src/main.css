@@ -1,4 +1,4 @@
-@import '../dist/tailwind.css';
+@import 'tailwind.css';
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@500;700&display=swap');
 
 /* Fonts 
@@ -14,10 +14,26 @@ src:url('./assets/FloodStd.otf');
 
 }
 
+.max-w-140
+{
+    max-width: 140px;
+
+}
+
 .max-w-160
 {
     max-width: 160px;
 
+}
+
+.max-w-200
+{
+    max-width:200px;
+}
+
+.max-w-256
+{
+    max-width: 256px;
 }
 
 .min-w-160

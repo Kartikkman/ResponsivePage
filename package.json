@@ -6,7 +6,8 @@
   "scripts": {
     "build-css": "npx postcss src/tailwind.css -o dist/tailwind.css",
     "start": "live-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "concat-css": "cat css/* > styles.css"
   },
   "author": "Kartik Sikka",
   "license": "ISC",
